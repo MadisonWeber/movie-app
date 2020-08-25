@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content = 'ie=edge'>
+    <title>Movies</title>
+    <link rel="stylesheet" href = 'style.css'>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css" integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Crete+Round&family=Yantramanav:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="modal" id = 'modal' style="display: none;">
+        <div class="header-modal">
+            <h1>Confirm Your Purchase</h1>
+            <button class = 'btn exit-button'>&times;</button>
+        </div>
+        <div class="body-modal">
+            <p>Number Of Seats:<span class = 'num-seats'></span></p>
+            <p>Total Price:<span class= 'confirm-price'></span></p>
+        </div>
+        <div class="bottom-modal">
+            <button class = 'btn confirm-btn'>Confirm</button>
+            <button class = 'btn change-btn'>Change</button>
+        </div>
+    </div>
+    <div class="main-container">
+        <h2>Choose Your Seats</h2>
+        <div class = 'select-movie-container'>
+            <div class="select-movie">
+                <div>Choose a Movie</div>
+                <div class = 'active-movie'><small class = 'movie-selected'>No Movie Selected</small></div>
+                <i class = 'fas fa-angle-down'></i>
+            </div>
+            <div class="movie-options hide" >
+                <ul>
+                    <li>Spectre<span class = 'price'>$12</span></li>
+                    <li>Bob the Builder<span class = 'price'>$10</span></li>
+                    <li>American Psycho<span class = 'price'>$10</span></li>
+                    <li>Slapshot<span class = 'price'>$14</span></li>
+                    <li>Transformers<span class = 'price'>$12</span></li>
+                    <li>Greece<span class = 'price'>$10</span></li>
+                </ul>
+            </div>
+        </div>
+        <div class = 'screen'></div>
+        <div class="third-section">
+            <div>
+                <div class="seat occupied null"></div>
+                <p>N/A</p>
+            </div>
+            <div>
+                <div class="seat selected null"></div>
+                <p>Selected</p>
+            </div>
+            <div>
+                <div class="seat available null"></div>
+                <p>Available</p>
+            </div>
+        </div>
+        <div class = 'seats-container'>
+            <div class="row">
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+            </div>
+            <div class="row">
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+            </div>
+            <div class="row">
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+            </div>
+            <div class="row">
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+            </div>
+            <div class="row">
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+            </div>
+            <div class="row">
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+            </div>
+        </div>
+
+        <div class = 'cost-container'>
+            <p>Total Cost:<span class = 'total'>$</span></p>
+            <p>After Taxes:<span class = 'taxTotal'>$</span></p>
+        </div>
+        
+        <button class = 'btn buy-button'>Buy Now</button>
+
+
+    </div>
+    <script src = 'script.js'></script>
+</body>
+</html>
